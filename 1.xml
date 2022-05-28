@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE test SYSTEM "file.dtd">
+<test>
+  <lecture>
+    <header>XML</header>
+    <question>
+      <header>What year was XML developed?</header>
+      <answer correct="false">1986</answer>
+      <answer correct="true">1996</answer>
+      <answer correct="false">2006</answer>
+    </question>
+
+    <question>
+      <header>Какой тег должен находиться в прологе документа?</header>
+      <answer correct="true">&lt;?xml?&gt;</answer>
+      <answer correct="false">&lt;?html?&gt;</answer>
+      <answer correct="false">&lt;?xml1.0?&gt;</answer>
+    </question>
+
+    <question>
+      <header>Какое утверждение является не верным для имени атрибута?</header>
+      <answer correct="false">Префикс "xml" зарезервирован</answer>
+      <answer correct="false">Может содержать буквы, цифры, ".", "-" и "_"</answer>
+      <answer correct="true">Начинается с буквы, цифры или с "_"</answer>
+    </question>
+
+    <question>
+      <header>Какое утверждение не является верным для значения атрибута? </header>
+      <answer correct="true">Может содержать символ &lt;</answer>
+      <answer correct="false">Может содержать ссылку на символ или примитив</answer>
+      <answer correct="false">Может содержать символ &amp; только если это ссылка</answer>
+    </question>
+
+    <question>
+      <header>В каком из примеров синтаксис определения сущности корректный?</header>
+      <answer correct="false">&lt;!ENTITY: client "Mr. Ivanov"&gt;</answer>
+      <answer correct="false">&lt;!ENTITY client &lt;Mr. Ivanov"&gt;&gt;</answer>
+      <answer correct="true">&lt;!ENTITY client "Mr. Ivanov"&gt;</answer>
+    </question>
+  </lecture>
+
+  <lecture>
+    <header>DTD</header>
+    <question >
+      <header>Какие проблемы могут возникнуть при использовании модели документа?</header>
+      <answer correct="false">Замедление работы</answer>
+      <answer correct="false">Ограничение использования элементов</answer>
+      <answer correct="false">Возможные проблемы с пространствами имен</answer>
+      <answer correct="true">Все вышеперечисленные</answer>
+    </question>
+
+    <question>
+      <header>Чем является DTD?</header>
+      <answer correct="true">Набором правил</answer>
+      <answer correct="false">Массивом сущностей</answer>
+      <answer correct="false">Дополнительным файлом с разметкой</answer>
+    </question>
+
+    <question>
+      <header>Символ, определяющий любое кол-во присутствий в шаблоне</header>
+      <answer correct="false">?</answer>
+      <answer correct="false">+</answer>
+      <answer correct="true">*</answer>
+    </question>
+
+    <question>
+      <header>Тип атрибута CDATA это:</header>
+      <answer correct="false">Ссылка на идентификатор</answer>
+      <answer correct="true">Символьные данные</answer>
+      <answer correct="false">Список нотаций</answer>
+    </question>
+
+    <question>
+      <header>Каким символом можно ссылаться на общую сущность?</header>
+      <answer correct="true">&amp;</answer>
+      <answer correct="false">#</answer>
+      <answer correct="false">%</answer>
+    </question>
+
+  </lecture>
+
+  <lecture>
+    <header>XSD</header>
+    <question>
+      <header>В xsd для вещественных чисел используют типы данных:</header>
+      <answer correct="false"> long double, float, double</answer>
+      <answer correct="false">float, double, long float</answer>
+      <answer correct="true">decimal, float, double</answer>
+    </question>
+
+    <question>
+      <header>XSD типы данных для целых чисел:</header>
+      <answer correct="true">integer, positiveinteger, negativeinteger</answer>
+      <answer correct="false">int, byte, long</answer>
+      <answer correct="false">short, long, int</answer>
+    </question>
+
+    <question>
+      <header>XSD типы данных для строк:</header>
+      <answer correct="false">char*, string, name</answer>
+      <answer correct="false">str, name, id</answer>
+      <answer correct="true">ID, name, language</answer>
+    </question>
+
+    <question >
+      <header>XSD типы данных для даты и времни:</header>
+      <answer correct="true">time, dateTime, duration</answer>
+      <answer correct="false">data, duration, time</answer>
+      <answer correct="false">durationDate, durationTime, date</answer>
+    </question>
+
+    <question>
+      <header>В xsd нет типа данных</header>
+      <answer correct="false">binary</answer>
+      <answer correct="false">date</answer>
+      <answer correct="true">bool</answer>
+    </question>
+  </lecture>
+
+  <lecture>
+    <header>XLink</header>
+    <question>
+      <header>За что отвечает атрибут xlink:actuate?</header>
+      <answer correct="false">Такого атрибута нет</answer>
+      <answer correct="false">Ссылка на валидатор</answer>
+      <answer correct="true">Говорит браузеру, когда показывать содержимое</answer>
+    </question>
+
+    <question>
+      <header>Внешняя ссылка - это </header>
+      <answer correct="true">Ссылка между полностью удаленными ресурсами.</answer>
+      <answer correct="false">Ссылка внутри одного документа к разным его элементам.</answer>
+      <answer correct="false">Ссылка из удаленного ресурса на локальный ресурс</answer>
+    </question>
+
+    <question>
+      <header>Исходящая ссылка - это</header>
+      <answer correct="false">Ссылка из удаленного ресурса.</answer>
+      <answer correct="false">Ссылка направленная на несколько ресурсов.</answer>
+      <answer correct="true">Ссылка из локального ресурса на удаленный.</answer>
+    </question>
+
+    <question >
+      <header>Что о Простой ссылке правда.</header>
+      <answer correct="true">определяет однонаправленную связь между двумя ресурсами</answer>
+      <answer correct="true">Источник, начальный ресурс связи — сам элемент ссылки</answer>
+      <answer correct="true">Целевой или конечный ресурс связи задается URI</answer>
+    </question>
+
+    <question>
+      <header>Самая простая интерпретация простой ссылки:</header>
+      <answer correct="false">xlink:type = "simple"</answer>
+      <answer correct="false">Всё сложное</answer>
+      <answer correct="true">html ссылка</answer>
+    </question>
+  </lecture>
+
+  <lecture>
+    <header>XPath</header>
+    <question>
+      <header>Какого типа узлов не существует:</header>
+      <answer correct="false">Корневой</answer>
+      <answer correct="false">Текстовой</answer>
+      <answer correct="true">Числовой</answer>
+    </question>
+
+    <question>
+      <header>Бывают ли маршруты к атрибутам</header>
+      <answer correct="true">Да</answer>
+      <answer correct="false">Нет</answer>
+    </question>
+
+    <question>
+      <header>Объединение нескольких маршрутов происходит с помощью знака</header>
+      <answer correct="false">||</answer>
+      <answer correct="false">&amp;&amp;</answer>
+      <answer correct="true">|</answer>
+      <answer correct="false">&amp;</answer>
+    </question>
+
+    <question >
+      <header>Верный пример сложного маршрута</header>
+      <answer correct="true">/test/lecture</answer>
+      <answer correct="true">../header/text()</answer>
+      <answer correct="false">/answer</answer>
+    </question>
+
+    <question>
+      <header>Что возвращает функция XPath</header>
+      <answer correct="true">набор узлов</answer>
+      <answer correct="true">строку</answer>
+      <answer correct="true">логическое значение</answer>
+    </question>
+  </lecture>
+
+  <lecture>
+    <header>XPointer</header>
+    <question>
+      <header>Основан на базе:</header>
+      <answer correct="false">XML</answer>
+      <answer correct="false">XPath</answer>
+      <answer correct="true">XSD</answer>
+    </question>
+
+    <question>
+      <header>Это сокращенный синтаксис распространненых форм XPath</header>
+      <answer correct="true">Да</answer>
+      <answer correct="false">Нет</answer>
+    </question>
+
+    <question>
+      <header>Что вернет при дублировании указателей(xpointer(//first_name)xpointer(//last_name))</header>
+      <answer correct="true">Первое</answer>
+      <answer correct="false">Второе</answer>
+      <answer correct="true">Второе, если нет первого</answer>
+      <answer correct="false">Первое, если нет второго</answer>
+    </question>
+
+    <question>
+      <header>Верный пример сложного маршрута</header>
+      <answer correct="true">/test/lecture</answer>
+      <answer correct="true">../header/text()</answer>
+      <answer correct="false">/answer</answer>
+    </question>
+
+    <question>
+      <header>Что возвращает функция XPath</header>
+      <answer correct="true">набор узлов</answer>
+      <answer correct="true">строку</answer>
+      <answer correct="true">логическое значение</answer>
+    </question>
+  </lecture>
+
+  <lecture>
+    <header>XQuery</header>
+    <question>
+      <header>Какая модель данных</header>
+      <answer correct="true">Древовидная</answer>
+      <answer correct="false">Объектная</answer>
+      <answer correct="true">Иерархическая</answer>
+    </question>
+
+    <question>
+      <header>Что такое XQuery</header>
+      <answer correct="true">Язык запросов для баз данных в формате xml</answer>
+      <answer correct="false">Язык разметки xml</answer>
+    </question>
+
+    <question>
+      <header>Отличия XML от реляционной БД</header>
+      <answer correct="true">XML упорядочен</answer>
+      <answer correct="false">XML   не разряжен</answer>
+      <answer correct="true">Чистый язык реляционных запросов не подходит к XML данным</answer>
+    </question>
+
+    <question>
+      <header>XQuery основан на</header>
+      <answer correct="true">XPath</answer>
+      <answer correct="true">XSD</answer>
+      <answer correct="false">XSL</answer>
+    </question>
+
+    <question>
+      <header>Различия XPath и XQuery</header>
+      <answer correct="true">XPath не определяет источник данных</answer>
+      <answer correct="true">XPath не формирует результат, только выборка</answer>
+      <answer correct="false"> XPath объединяет данные</answer>
+    </question>
+  </lecture>
+
+  <lecture>
+    <header>XSL</header>
+    <question>
+      <header>Для чего используется XSL</header>
+      <answer correct="true">Форматирование XML документов</answer>
+      <answer correct="false">Для того чтобы резать хлеб</answer>
+      <answer correct="true">Преобразование XML документов</answer>
+    </question>
+
+    <question>
+      <header>Для навигации в XSL используют</header>
+      <answer correct="false">Яндекс карты</answer>
+      <answer correct="false">Google карты</answer>
+      <answer correct="true">XPath</answer>
+    </question>
+
+    <question>
+      <header>Какой вид документ XML нужен для работы XSL?</header>
+      <answer correct="true">Корректный</answer>
+      <answer correct="false">Расширение файла которого соответствует xml</answer>
+      <answer correct="false">Любой</answer>
+    </question>
+
+    <question>
+      <header>Есть ли в XSL поддержка схем, DTD и пространств имен?</header>
+      <answer correct="true">да</answer>
+      <answer correct="false">нет</answer>
+      <answer correct="false">Я вообще не знаю как меня зовут</answer>
+    </question>
+
+    <question>
+      <header>Рекомендуемый префикс</header>
+      <answer correct="true">xsl</answer>
+      <answer correct="false">xml</answer>
+      <answer correct="false">dtd</answer>
+    </question>
+  </lecture>
+
+  <lecture>
+    <header>XSL-FO</header>
+    <question>
+      <header>Что такое XSL-FO?</header>
+      <answer correct="true">Полноценное приложение</answer>
+      <answer correct="false">Библиотека для XSL с различными структурами запросов XPath</answer>
+      <answer correct="false">Библиотека для XSL, с помощью которой создают html, pdf, latex и т.п.</answer>
+    </question>
+
+    <question>
+      <header>Какие виды блоков существуют</header>
+      <answer correct="true">Области</answer>
+      <answer correct="true">Блочные зоны</answer>
+      <answer correct="true">Строковые зоны</answer>
+      <answer correct="false">Регионы</answer>
+    </question>
+
+    <question>
+      <header>Какого атрибута макета не существует?</header>
+      <answer correct="false">master-name</answer>
+      <answer correct="true">height</answer>
+      <answer correct="false">writing-mod</answer>
+    </question>
+
+    <question>
+      <header>Какая структура документа созданного с помощью XSL-FO</header>
+      <answer correct="true">Документ - набор страниц</answer>
+      <answer correct="false">Страница - набор блоков</answer>
+      <answer correct="false">Страница - набор строк</answer>
+    </question>
+
+    <question>
+      <header>Поддерживает ли XSL-FO нумерацию страниц?</header>
+      <answer correct="true">да</answer>
+      <answer correct="false">нет</answer>
+      <answer correct="false">Только на Linux</answer>
+    </question>
+  </lecture>
+
+  <lecture>
+    <header>XML-RPC</header>
+    <question>
+      <header>Для чего используют XML-RPC?</header>
+      <answer correct="true">Удаленная обработка данных.</answer>
+      <answer correct="false">Для запросов на хранение информации сервером.</answer>
+      <answer correct="true">Управление удаленными приложениями</answer>
+    </question>
+
+    <question>
+      <header>Какие технологии присутствуют в XML-RPC?</header>
+      <answer correct="true">DCOM</answer>
+      <answer correct="true">COBRA</answer>
+      <answer correct="true">SOAP</answer>
+      <answer correct="false">ANACONDA</answer>
+    </question>
+
+    <question>
+      <header>Как выглядит integer в XML-RPC?</header>
+      <answer correct="true">i4</answer>
+      <answer correct="false">int</answer>
+      <answer correct="false">integer</answer>
+    </question>
+
+    <question>
+      <header>Запрос на сервер начинается с:</header>
+      <answer correct="false">methodName</answer>
+      <answer correct="false">params</answer>
+      <answer correct="true">Ничего из выше перечисленного</answer>
+    </question>
+
+    <question>
+      <header>Ответ от XML-RPC начинается со строки:</header>
+      <answer correct="false">xml</answer>
+      <answer correct="true">&lt;xml version="1.0"&gt;</answer>
+      <answer correct="false">methodResponse</answer>
+    </question>
+  </lecture>
+
+  <lecture>
+    <header>RDF</header>
+    <question>
+      <header>Триплет имеет вид</header>
+      <answer correct="false">Объект-условие-объект</answer>
+      <answer correct="true">субъект-предикат-объект</answer>
+    </question>
+
+    <question>
+      <header>Как расшифровывается RDF</header>
+      <answer correct="false">Red Dream Family</answer>
+      <answer correct="false">Resource Done Finish</answer>
+      <answer correct="true">Resource Description Framework</answer>
+    </question>
+
+    <question>
+      <header>Что такое URI </header>
+      <answer correct="true">Универсальный Идентификатор Ресурсов</answer>
+      <answer correct="false">Универсальный внутренний ресурс </answer>
+    </question>
+
+    <question>
+      <header>Что такое RDF?</header>
+      <answer correct="false">Рыжая деревня финов</answer>
+      <answer correct="false">набор запросов</answer>
+      <answer correct="true">Это модель представления данных</answer>
+    </question>
+  </lecture>
+</test>
